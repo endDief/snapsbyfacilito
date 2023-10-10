@@ -1,0 +1,13 @@
+<div id="<%= dom_id snap %>">
+  <%= image_tag url_for(snap.image) if snap.image.attached?%>
+  <p>
+    <strong>Title:</strong>
+    <%= snap.title %>
+  </p>
+
+  <p>
+    <strong>Color:</strong>
+    <%= snap.color %>
+  </p>
+
+</div>
