@@ -13,20 +13,20 @@
 
   <div>
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class:"form-control" %>
   </div>
 
   <div>
     <%= form.label :image, style: "display: block" %>
     <%= form.file_field :image, class:"form-control", accept:"image/*", capture:"camera" %>
-  </div>
+  </div>  
 
   <div>
     <%= form.label :color, style: "display: block" %>
-    <%= form.text_field :color %>
+    <%= form.color_field :color %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Guardar snap", class:"btn btn-primary d-block w-100" %>
   </div>
 <% end %>
